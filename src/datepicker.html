@@ -2,12 +2,12 @@
   <label class="control-label" ng-show="showTitle()">{{form.title}}</label>
 
   <input ng-show="form.key"
-         style="background-color: white"
+         
          type="text"
          class="form-control {{form.fieldHtmlClass}}"
          schema-validate="form"
          ng-model="$$value$$"
-         pick-a-date
+         pick-a-date="form.datepickerOptions"
          min-date="form.minDate"
          max-date="form.maxDate"
          format="form.format" />

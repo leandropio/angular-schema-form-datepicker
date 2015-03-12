@@ -59,7 +59,7 @@ gulp.task('jscs', function() {
 gulp.task('default', [
   'minify',
   'non-minified-dist',
-  'jscs'
+  //'jscs'
 ]);
 
 gulp.task('watch', function() {
